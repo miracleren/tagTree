@@ -84,4 +84,4 @@ $("#test").tagTree({
 ```
 
 ## 运行效果如下
-![image](https://github.com/miracleren/tagTree/blob/master/img/show.jpg)
+![image](https://github.com/miracleren/tagTree/blob/master/img/show.png)
