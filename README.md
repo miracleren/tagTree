@@ -84,4 +84,4 @@ $("#test").tagTree({
 ```
 
 ## 运行效果如下
-
+![image](https://github.com/miracleren/selectGrid/blob/master/img/show.jpg)
