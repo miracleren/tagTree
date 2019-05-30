@@ -1,0 +1,84 @@
+<!DOCTYPE>
+<head>
+<title>jquery多级树型标签</title>
+<link rel="stylesheet" type="text/css" href="css/tagTree.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/tagTree.js"></script>
+<script type="text/javascript">
+$(function(){
+
+    var data =[
+	    {
+	    	name:"1号标签",
+	    	value:"1",
+	    	children:[
+	    		{
+	    			name:"11号标签",
+			    	value:"11",
+			    	children:[]
+	    		},
+				{
+	    			name:"12号标签",
+			    	value:"12",
+			    	children:[]
+	    		},
+				{
+	    			name:"13号标签",
+			    	value:"13",
+			    	children:[
+			    		{
+			    			name:"131号标签",
+					    	value:"131",
+					    	children:[]
+	    				}
+	    			]
+	    		}
+	    	]
+	    },
+	    {
+	    	name:"2号标签",
+	    	value:"2",
+	    	children:[
+	    		{
+	    			name:"21号标签",
+			    	value:"21",
+			    	children:[]
+	    		},
+				{
+	    			name:"22号标签",
+			    	value:"22",
+			    	children:[]
+	    		}
+	    	]
+	    },
+	    {
+	    	name:"3号标签",
+	    	value:"3",
+	    	children:[]
+	    }
+    ];
+
+    $("#test").tagTree({
+    	id:"",
+    	data:data,
+    	fold:false,
+    	multiple:false,
+    	check:function(val){
+    		console.log('chekc:'+val);
+    		console.log($(this).tagTreeValues());
+    	},
+    	done:function(){
+    		console.log('tagTree is ok!');
+    	}
+    });
+});
+</script>
+</head>
+
+<body>
+	<div id="test"></div>
+
+</body>
+
+</html>
