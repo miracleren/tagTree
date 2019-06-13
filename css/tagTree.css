@@ -22,7 +22,7 @@
     border-left:1px dashed #795548;
     bottom:50px;
     height:100%;
-    top:-4;
+    top:-4px;
     width:1px
 }
 .tagtree li::after {
@@ -37,7 +37,7 @@
     background-color: #1ABC9C;
     height: 28px;
     display: inline-block;
-    padding: 0 8 0 5;
+    padding: 0 8px 0 5px;
     font-size: 14px;
     line-height: 28px;
     color: white;
